@@ -1,33 +1,67 @@
+<div align="center">
+
 # 🏥 HealthXpress
 
-HealthXpress is a modern healthcare platform designed to improve access to healthcare services through a clean, responsive, and user-friendly web application. The project aims to bridge the gap between patients and healthcare services by providing features such as doctor consultation, ambulance booking, disease information, government health schemes, and medical camp details.
+### *Modern Healthcare Accessibility Platform*
 
-> 🚧 **Project Status:** Frontend Completed ✅ | Backend Development In Progress 🚀
+<p align="center">
 
-## 📖 Project Overview
+<img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
 
-HealthXpress is being developed to simplify healthcare accessibility for everyone, especially people living in rural and underserved areas.
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
 
-The frontend provides an intuitive interface for users to explore healthcare services, while the upcoming backend will enable secure authentication, appointment booking, ambulance requests, AI-powered assistance, and database integration.
+<img src="https://img.shields.io/badge/Status-Frontend%20Completed-success?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Backend-In%20Progress-orange?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Responsive-Yes-blue?style=for-the-badge"/>
+
+</p>
+
+### 🚀 *Making Healthcare Accessible for Everyone*
 
 ---
 
-## ✨ Frontend Features
+</div>
 
-- 🏠 Responsive Landing Page
-- 👨‍⚕️ AI Doctor Interface
-- 🩺 Physical Doctor Consultation Page
-- 🚑 Ambulance Booking Interface
-- 💊 Disease Information Page
-- 🏥 Medical Camp Information
+# 📖 Project Overview
+
+HealthXpress is a modern healthcare platform designed to improve access to healthcare services through a clean, responsive, and user-friendly web application.
+
+The project aims to bridge the gap between patients and healthcare services by providing features such as:
+
+- 👨‍⚕️ Doctor Consultation
+- 🚑 Ambulance Booking
+- 💊 Disease Information
+- 🏥 Medical Camp Details
 - 📋 Government Health Schemes
-- 👤 User Registration Form
-- 📱 Mobile Responsive Design
-- 🎨 Modern Healthcare UI
+
+> ## 🚧 Project Status
+>
+> ✅ **Frontend Completed**
+>
+> 🚀 **Backend Development In Progress**
 
 ---
 
-## 🚀 Upcoming Backend Features
+# ✨ Frontend Features
+
+| 🚀 Feature | Status |
+|------------|:------:|
+| 🏠 Responsive Landing Page | ✅ |
+| 👨‍⚕️ AI Doctor Interface | ✅ |
+| 🩺 Physical Doctor Consultation | ✅ |
+| 🚑 Ambulance Booking Interface | ✅ |
+| 💊 Disease Information | ✅ |
+| 🏥 Medical Camp Information | ✅ |
+| 📋 Government Health Schemes | ✅ |
+| 👤 User Registration Form | ✅ |
+| 📱 Mobile Responsive Design | ✅ |
+| 🎨 Modern Healthcare UI | ✅ |
+
+---
+
+# 🚀 Upcoming Backend Features
 
 - 🔐 User Authentication (Register & Login)
 - 🗄️ MongoDB Database Integration
@@ -38,77 +72,69 @@ The frontend provides an intuitive interface for users to explore healthcare ser
 - 📧 Email Notifications
 - 🔒 JWT Authentication
 - 👨‍💼 Admin Dashboard
-- RESTful APIs
+- 🌐 RESTful APIs
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend
-
-- React.js
-- Vite
-- React Router DOM
-- CSS3
-- React Icons
-- Axios
-
-### Backend (In Progress)
-
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- bcrypt
-- dotenv
+| 💻 Frontend | ⚙️ Backend *(In Progress)* |
+|-------------|----------------------------|
+| ⚛️ React.js | 🟢 Node.js |
+| ⚡ Vite | 🚂 Express.js |
+| 🌐 React Router DOM | 🍃 MongoDB |
+| 🎨 CSS3 | 🧩 Mongoose |
+| 🎯 React Icons | 🔐 JWT Authentication |
+| 📡 Axios | 🔑 bcrypt |
+| | ⚙️ dotenv |
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 HealthXpress/
 │
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
+├── 📁 frontend/
+│   ├── 📁 public/
+│   ├── 📁 src/
+│   │   ├── 📁 assets/
+│   │   ├── 📁 components/
+│   │   ├── 📁 pages/
+│   │   ├── 📁 services/
 │   │   ├── App.jsx
 │   │   └── main.jsx
+│   │
 │   ├── package.json
 │   └── vite.config.js
 │
-└── backend/
-    ├── (Coming Soon)
+└── 📁 backend/
+    └── 🚧 Coming Soon
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-Clone the repository
+### 📥 Clone Repository
 
 ```bash
 git clone https://github.com/Irfankhan2004/HealthXpress.git
 ```
 
-Navigate to the frontend
+### 📂 Navigate to Frontend
 
 ```bash
 cd HealthXpress/frontend
 ```
 
-Install dependencies
+### 📦 Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server
+### ▶️ Run Development Server
 
 ```bash
 npm run dev
@@ -116,32 +142,52 @@ npm run dev
 
 ---
 
-## 🎯 Future Scope
+# 🎯 Future Scope
 
-- Secure User Login & Registration
-- AI-powered Symptom Analysis
-- Real-time Ambulance Booking
-- Doctor Appointment Scheduling
-- Medical Camp Registration
-- Government Scheme Eligibility Checker
-- Online Medical History
-- Emergency Contact System
-- Admin Management Panel
-
----
-
-## 👨‍💻 Developer
-
-**Irfan Khan**
-
-B.Tech Computer Science & Engineering
-
-Institute of Technical Education and Research (ITER), SOA University
-
-GitHub: https://github.com/Irfankhan2004
+- 🔐 Secure User Login & Registration
+- 🤖 AI-powered Symptom Analysis
+- 🚑 Real-time Ambulance Booking
+- 👨‍⚕️ Doctor Appointment Scheduling
+- 🏥 Medical Camp Registration
+- 📋 Government Scheme Eligibility Checker
+- 📁 Online Medical History
+- 📞 Emergency Contact System
+- 👨‍💼 Admin Management Panel
 
 ---
 
-## ⭐ Support
+# 👨‍💻 Developer
 
-If you like this project, please consider giving it a ⭐ on GitHub. Your support motivates me to keep improving HealthXpress.
+<div align="center">
+
+## Irfan Khan
+
+🎓 **B.Tech Computer Science & Engineering**
+
+🏫 **Institute of Technical Education and Research (ITER)**
+
+SOA University
+
+### 🌐 GitHub
+
+**https://github.com/Irfankhan2004**
+
+</div>
+
+---
+
+<div align="center">
+
+# ⭐ Support
+
+If you like this project, please consider giving it a ⭐ on GitHub.
+
+Your support motivates me to continue improving **HealthXpress** ❤️
+
+---
+
+## 🚀 Thank You for Visiting!
+
+**Made with ❤️ by Irfan Khan**
+
+</div>
