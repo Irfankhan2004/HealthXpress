@@ -1,0 +1,471 @@
+/* ==========================================
+   DOCTOR CHOICE PAGE
+========================================== */
+
+.doctor-choice{
+
+    min-height:100vh;
+    padding:120px 20px 60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #2563eb,
+        #14b8a6
+    );
+
+}
+
+/* ===============================
+   Animated Background
+================================ */
+
+.doctor-choice::before{
+
+    content:"";
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+    left:-120px;
+
+    animation:floatOne 8s ease-in-out infinite;
+
+}
+
+.doctor-choice::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(20,184,166,.15);
+
+    bottom:-100px;
+    right:-100px;
+
+    animation:floatTwo 10s ease-in-out infinite;
+
+}
+
+@keyframes floatOne{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(30px);}
+    100%{transform:translateY(0);}
+
+}
+
+@keyframes floatTwo{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0);}
+
+}
+
+/* ===============================
+   Container
+================================ */
+
+.choice-container{
+
+    width:100%;
+    max-width:1200px;
+    position:relative;
+    z-index:2;
+
+}
+
+/* ===============================
+   Heading
+================================ */
+
+.choice-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.choice-title h1{
+
+    color:white;
+    font-size:52px;
+    margin-bottom:18px;
+
+}
+
+.choice-title p{
+
+    color:#dbeafe;
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+/* ===============================
+   Grid
+================================ */
+
+.choice-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+
+}
+
+/* ===============================
+   Card
+================================ */
+
+.choice-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:45px 35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.choice-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    right:-70px;
+    top:-70px;
+
+}
+
+.choice-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.30);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.choice-icon{
+
+    width:110px;
+    height:110px;
+
+    margin:auto;
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:48px;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #14b8a6,
+        #2563eb
+    );
+
+    box-shadow:0 20px 40px rgba(37,99,235,.35);
+
+    animation:floating 3s ease-in-out infinite;
+
+    transition:.35s;
+
+}
+
+.choice-card:hover .choice-icon{
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.choice-card h2{
+
+    color:white;
+
+    margin-bottom:18px;
+
+    font-size:30px;
+
+}
+
+.choice-card p{
+
+    color:#dbeafe;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.choice-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+    transition:.35s;
+
+}
+
+.choice-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.45);
+
+}
+
+/* ==========================================
+   CARD BOTTOM BORDER
+========================================== */
+
+.choice-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.choice-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/* ==========================================
+   FADE ANIMATION
+========================================== */
+
+.choice-card{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+.choice-card:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.choice-card:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .doctor-choice{
+
+        padding:100px 20px 50px;
+
+    }
+
+    .choice-title h1{
+
+        font-size:36px;
+
+    }
+
+    .choice-title p{
+
+        font-size:16px;
+
+    }
+
+    .choice-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .choice-card{
+
+        padding:35px 25px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .choice-icon{
+
+        width:85px;
+
+        height:85px;
+
+        font-size:38px;
+
+    }
+
+    .choice-card{
+
+        padding:28px 20px;
+
+    }
+
+    .choice-card h2{
+
+        font-size:24px;
+
+    }
+
+    .choice-btn{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,364 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 8% 80px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #2563eb,
+        #14b8a6
+    );
+
+}
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-130px;
+
+    left:-130px;
+
+    animation:floatOne 8s ease-in-out infinite;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(20,184,166,.15);
+
+    bottom:-100px;
+
+    right:-100px;
+
+    animation:floatTwo 10s ease-in-out infinite;
+
+}
+
+@keyframes floatOne{
+
+    0%{transform:translateY(0);}
+
+    50%{transform:translateY(30px);}
+
+    100%{transform:translateY(0);}
+
+}
+
+@keyframes floatTwo{
+
+    0%{transform:translateY(0);}
+
+    50%{transform:translateY(-30px);}
+
+    100%{transform:translateY(0);}
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    animation:fadeUp .8s ease;
+
+}
+
+.hero-content h1{
+
+    color:white;
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:22px;
+
+}
+
+.hero-content h1 span{
+
+    color:#14b8a6;
+
+}
+
+.hero-content p{
+
+    color:#dbeafe;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Primary Button */
+
+.btn-primary{
+
+    padding:15px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.45);
+
+}
+
+/* Secondary Button */
+
+.btn-secondary{
+
+    padding:15px 38px;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   FADE ANIMATION
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .hero-content{
+
+        padding:45px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:48px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:110px 20px 60px;
+
+    }
+
+    .hero-content{
+
+        padding:35px 25px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero-content{
+
+        padding:28px 20px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        padding:14px 25px;
+
+        font-size:15px;
+
+    }
+
+}

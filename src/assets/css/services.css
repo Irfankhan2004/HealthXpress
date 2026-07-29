@@ -1,0 +1,436 @@
+/* ==========================================
+   SERVICES SECTION
+========================================== */
+
+.services{
+
+    padding:90px 8%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #2563eb,
+        #14b8a6
+    );
+
+}
+
+/* ==========================================
+   BACKGROUND EFFECT
+========================================== */
+
+.services::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    left:-120px;
+
+    animation:floatOne 8s ease-in-out infinite;
+
+}
+
+.services::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(20,184,166,.15);
+
+    bottom:-100px;
+
+    right:-100px;
+
+    animation:floatTwo 10s ease-in-out infinite;
+
+}
+
+@keyframes floatOne{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(30px);}
+    100%{transform:translateY(0);}
+
+}
+
+@keyframes floatTwo{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-30px);}
+    100%{transform:translateY(0);}
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.services h2{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:55px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ==========================================
+   EMERGENCY CARD
+========================================== */
+
+.priority-service{
+
+    position:relative;
+
+    z-index:2;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.priority-service h3{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.priority-service p{
+
+    color:#dbeafe;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.btn-priority{
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+}
+
+.btn-priority:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.45);
+
+}
+
+/* ==========================================
+   SERVICE GRID
+========================================== */
+
+.service-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:35px 30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    top:-70px;
+
+    right:-70px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 55px rgba(0,0,0,.35);
+
+}
+
+.card h3{
+
+    color:white;
+
+    font-size:26px;
+
+    margin:20px 0 15px;
+
+}
+
+.card p{
+
+    color:#dbeafe;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   CARD ICON
+========================================== */
+
+.card svg{
+
+    font-size:55px;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #14b8a6,
+        #2563eb
+    );
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+    transition:.35s;
+
+}
+
+.card:hover svg{
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.card{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+.card:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .services{
+
+        padding:70px 20px;
+
+    }
+
+    .services h2{
+
+        font-size:34px;
+
+    }
+
+    .priority-service{
+
+        padding:30px 20px;
+
+    }
+
+    .priority-service h3{
+
+        font-size:24px;
+
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .card{
+
+        padding:28px 22px;
+
+    }
+
+    .card h3{
+
+        font-size:22px;
+
+    }
+
+    .card p{
+
+        font-size:14px;
+
+    }
+
+    .btn-priority{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,851 @@
+/* ===========================================
+   AMBULANCE PAGE
+=========================================== */
+
+.ambulance-page{
+
+    min-height:100vh;
+
+    padding:120px 20px 60px;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1d4ed8,
+        #14b8a6
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ambulance-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    top:-180px;
+
+    left:-180px;
+
+    animation:floatOne 8s infinite ease-in-out;
+
+}
+
+.ambulance-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    bottom:-150px;
+
+    right:-150px;
+
+    animation:floatTwo 10s infinite ease-in-out;
+
+}
+
+@keyframes floatOne{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(30px);
+
+    }
+
+}
+
+@keyframes floatTwo{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-30px);
+
+    }
+
+}
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.ambulance-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.ambulance-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.ambulance-header h1{
+
+    color:#fff;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.ambulance-header p{
+
+    color:#dbeafe;
+
+    font-size:18px;
+
+}
+
+/* ===========================================
+   BOOKING FORM
+=========================================== */
+
+.booking-box{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.booking-form{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.booking-form h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    color:white;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.input-group input,
+
+.input-group select{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+}
+
+.find-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.find-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================================
+   MAP
+=========================================== */
+
+.map-box{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.map{
+
+    height:100%;
+
+    min-height:420px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    background:linear-gradient(
+        135deg,
+        #60a5fa,
+        #2563eb
+    );
+
+}
+
+/* ===========================================
+   AMBULANCE TYPES
+=========================================== */
+
+.ambulance-types{
+
+    margin-top:40px;
+
+}
+
+.ambulance-types h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    font-size:34px;
+
+}
+
+.type-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.type-card{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.35s;
+
+}
+
+.type-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
+
+.type-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+    color:#2563eb;
+
+    font-size:38px;
+
+}
+
+.type-card h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.type-card p{
+
+    color:#dbeafe;
+
+    line-height:1.7;
+
+}
+/* ===========================================
+   EMERGENCY SECTION
+=========================================== */
+
+.emergency-section{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================================
+   SOS CARD
+=========================================== */
+
+.sos-card{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.sos-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.sos-btn{
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    box-shadow:0 0 35px rgba(239,68,68,.5);
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(239,68,68,.4);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        box-shadow:0 0 35px rgba(239,68,68,.8);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(239,68,68,.4);
+
+    }
+
+}
+
+.sos-card h2{
+
+    color:white;
+
+    margin:25px 0 15px;
+
+}
+
+.sos-card p{
+
+    color:#dbeafe;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   ETA CARD
+=========================================== */
+
+.eta-card{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.eta-card h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.eta-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:18px 0;
+
+    color:white;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.eta-item span:last-child{
+
+    color:#14b8a6;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   DRIVER CARD
+=========================================== */
+
+.driver-card{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.driver-card h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.driver-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+.driver-avatar{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+}
+
+.driver-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.driver-name{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.driver-role{
+
+    color:#dbeafe;
+
+}
+
+.driver-detail{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    color:white;
+
+}
+
+/* ===========================================
+   FEATURES
+=========================================== */
+
+.features{
+
+    margin-top:60px;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:35px;
+
+    font-size:36px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-icon{
+
+    font-size:40px;
+
+    color:#14b8a6;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+}
+
+.feature-card p{
+
+    color:#dbeafe;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   ANIMATION
+=========================================== */
+
+.booking-form,
+.map-box,
+.type-card,
+.sos-card,
+.eta-card,
+.driver-card,
+.feature-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .booking-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .map{
+
+        min-height:300px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ambulance-header h1{
+
+        font-size:34px;
+
+    }
+
+    .ambulance-header p{
+
+        font-size:16px;
+
+    }
+
+    .type-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .ambulance-page{
+
+        padding:100px 15px 40px;
+
+    }
+
+    .booking-form{
+
+        padding:20px;
+
+    }
+
+    .map{
+
+        min-height:220px;
+
+        font-size:18px;
+
+    }
+
+    .sos-btn{
+
+        width:100px;
+
+        height:100px;
+
+        font-size:28px;
+
+    }
+
+    .driver-info{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}

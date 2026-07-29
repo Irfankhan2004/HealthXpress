@@ -1,0 +1,502 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:80px 8% 25px;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #2563eb,
+        #14b8a6
+    );
+
+}
+
+/* ==========================================
+   BACKGROUND EFFECT
+========================================== */
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-160px;
+
+    left:-140px;
+
+    animation:floatOne 8s ease-in-out infinite;
+
+}
+
+.footer::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(20,184,166,.15);
+
+    bottom:-120px;
+
+    right:-120px;
+
+    animation:floatTwo 10s ease-in-out infinite;
+
+}
+
+@keyframes floatOne{
+
+    0%{transform:translateY(0);}
+
+    50%{transform:translateY(30px);}
+
+    100%{transform:translateY(0);}
+
+}
+
+@keyframes floatTwo{
+
+    0%{transform:translateY(0);}
+
+    50%{transform:translateY(-30px);}
+
+    100%{transform:translateY(0);}
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.footer-container{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+}
+
+/* ==========================================
+   FOOTER BOX
+========================================== */
+
+.footer-box{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.footer-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.footer-logo{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:18px;
+
+}
+
+.footer-logo span{
+
+    color:#14b8a6;
+
+}
+
+.footer-about{
+
+    color:#dbeafe;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   TITLES
+========================================== */
+
+.footer h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+}
+
+.footer h3::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #14b8a6
+    );
+
+}
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:15px;
+
+}
+
+.footer-links a{
+
+    color:#dbeafe;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.footer-links a:hover{
+
+    color:white;
+
+    padding-left:10px;
+
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#dbeafe;
+
+    margin-bottom:15px;
+
+    line-height:1.7;
+
+}
+
+.footer-contact svg{
+
+    color:#14b8a6;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.social-icons a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-6px) rotate(10deg);
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    box-shadow:0 18px 35px rgba(37,99,235,.35);
+
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    margin-top:20px;
+
+}
+
+.newsletter input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.newsletter input::placeholder{
+
+    color:#dbeafe;
+
+}
+
+.newsletter button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #14b8a6
+    );
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+}
+
+.newsletter button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.45);
+
+}
+
+/* ==========================================
+   BOTTOM FOOTER
+========================================== */
+
+.footer-bottom{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:55px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#dbeafe;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:60px 20px 25px;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-box{
+
+        padding:24px;
+
+    }
+
+    .footer-logo{
+
+        font-size:28px;
+
+    }
+
+    .footer h3{
+
+        font-size:20px;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer{
+
+        padding:50px 15px 20px;
+
+    }
+
+    .footer-box{
+
+        padding:20px;
+
+    }
+
+    .footer-logo{
+
+        font-size:24px;
+
+    }
+
+    .footer-about{
+
+        font-size:14px;
+
+    }
+
+    .footer-bottom{
+
+        font-size:13px;
+
+    }
+
+}
